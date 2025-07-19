@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
+    <title>TO DO LIST</title>
+</head>
+<body>
+
+    <div class="container">
+     <div class="first">
+        <h1> My TO-DO List</h1>
+     </div>
+
+     <div class="second">
+        <input type="text" id="searchbar" placeholder="Enter the task" >
+        <Button id="btn" onclick="addtask()">Add Task</Button>
+     </div>
+    </div>
+
+    <div class="box">
+        
+        <div id="current">
+            <h1>Active Tasks</h1>
+        </div>
+
+        <div id="Completed" >
+            <h1>Completed Tasks</h1>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
