@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Clinic - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#">Smart Clinic</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Doctors</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Appointment Booking Section -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <h2 class="text-center text-primary fw-semibold mb-4">Book an Appointment</h2>
+          <div class="p-4 border rounded bg-white shadow-sm">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label fw-medium">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label fw-medium">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label fw-medium">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+
+              <div class="mb-3">
+                <label for="date" class="form-label fw-medium">Appointment Date</label>
+                <input type="date" class="form-control" id="date">
+              </div>
+
+              <div class="mb-3">
+                <label for="department" class="form-label fw-medium">Select Department</label>
+                <select class="form-select" id="department">
+                  <option selected disabled>Choose...</option>
+                  <option>Cardiology</option>
+                  <option>Dermatology</option>
+                  <option>Neurology</option>
+                  <option>General Medicine</option>
+                </select>
+              </div>
+
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="terms">
+                <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 fw-semibold">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container my-5">
+      <h2 class="text-center text-primary fw-semibold mb-4">Our Services</h2>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary fw-semibold">Cardiology</h5>
+              <p class="card-text text-muted">Heart-related care and diagnostics.</p>
+              <a href="#" class="text-decoration-none link-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary fw-semibold">Pediatrics</h5>
+              <p class="card-text text-muted">Child health and vaccination services.</p>
+              <a href="#" class="text-decoration-none link-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary fw-semibold">Orthopedics</h5>
+              <p class="card-text text-muted">Bone and joint treatment services.</p>
+              <a href="#" class="text-decoration-none link-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary fw-semibold">Radiology</h5>
+              <p class="card-text text-muted">MRI, CT, and other imaging diagnostics.</p>
+              <a href="#" class="text-decoration-none link-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
