@@ -1,0 +1,36 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+
+    <div class="slogen">
+       <div style="display: flex;  align-items: center; justify-content: center; gap : 10px"> <i class="fa-solid fa-won-sign"></i> 
+        <p>wanderlust</p>
+    </div>
+
+    <div>
+        <h2>Stay Smart, Book Fast — Your Perfect Hotel Awaits !</h2>
+    </div>
+
+    </div>
+
+    <div class="all-listings">
+
+    <% for(Listing of Listings){%>
+
+        <div class="each-listing">
+
+             <a href="/listings/<%= Listing.id %>"> <img src="<%=Listing.image%>"> </a>
+
+             <div class="each-listing-body">
+                <h4> <%= Listing.title %>  </h4>
+                  
+                <p>
+                    &#8377;<%=Listing.price%> /night
+                </p>
+             </div>
+
+
+        </div>
+    <%}%>
+
+    </div>
+

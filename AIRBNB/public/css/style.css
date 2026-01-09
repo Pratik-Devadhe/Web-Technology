@@ -1,0 +1,186 @@
+body{
+            margin : 0;
+            /* background-color: rgba(255, 255, 255, 0.749); */
+            background-color: rgba(255, 255, 255, 0.936); 
+            color : black;
+            font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            min-height: 100%;
+            height : 100%;
+            width: 100%;
+            max-width: 100%;
+}
+
+* {
+   box-sizing: border-box;  /* This makes padding included in the element’s width instead of added outside. */
+}
+
+
+header{
+            position : sticky;
+            height: 50px;
+            padding : 0 15rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 100%;
+             width: 100%;
+            background-color: rgba(0, 0, 0, 0.89);
+            border-bottom: 2px solid rgb(10, 14, 42);
+            font-size: 18px
+}
+
+.slogen{
+    width : 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slogen i{
+    font-size: 30px;
+    padding : 10px;
+    width: fit-content;
+    color: white;
+    background-color: #333;
+    border-radius: 50%;
+}
+.slogen p{
+    font-size: 30px;
+
+}
+
+.slogen h2 {
+  margin-top: 0;
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px 40px;
+  border-radius: 20px 80px 20px 80px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: fit-content;
+  margin: 40px auto;
+}
+
+/* .slogen h2:hover {
+  border-radius: 40% 60% 70% 30% / 50% 60% 40% 50%;
+  transform: scale(1.05);
+} */
+
+#home{
+    padding-right : 0;
+}
+
+#home span{
+    color:white;
+}
+
+ #home span i {
+    display: inline-flex;       /* makes it respect width/height */
+    align-items: center;        /* center vertically */
+    justify-content: center;    /* center horizontally */
+    width: 30px;
+    height: 30px;
+    font-size: 18px;            /* size of the actual icon */
+    color: black; 
+    background-color: white;       
+    border-radius: 50%;         /* makes it circular */
+}
+
+#navLinks a{
+    color : white;
+    margin: 0 2rem;
+    text-decoration: none;
+}
+
+#navLinks2{
+    width : 300px;
+    /* margin-left : auto; */
+    margin-right :0;
+}
+
+#navLinks2 a{
+    color : white;
+    margin :0 1rem  0 1rem;
+    text-decoration : none;
+}
+
+.all-listings{
+    margin-top : 30px;
+    display: grid;
+    grid-template-columns: repeat(12 ,1fr);
+    gap: 1rem;
+    padding : 10px;
+    
+}
+
+.each-listing{
+    margin-bottom: 12px;
+    grid-column: span 3;
+    padding : 10px;
+    margin: 0;
+}
+
+
+.each-listing a img{
+    width : 300px;
+    height: 270px;
+    border-radius: 4px;
+    opacity: 0.9;
+}
+
+
+
+.each-listing a img:hover{
+    opacity: 1;
+
+}
+
+
+.each-listing-body {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding : 0 auto;
+    margin: 0;
+    
+}
+
+.each-listing-body p {
+    margin-top: 0;
+    color : rgb(126, 129, 158);
+}
+
+
+.each-listing-body h4 {
+    margin: 0;
+    
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    height : 40px;
+    border-top: 2px solid rgb(10, 14, 42);
+    background: #333;
+    color: white;
+    text-align: center;
+    /* padding-top: 10px; */
+
+}
+
+footer ul{
+     display: flex; 
+}
+
+footer ul li{
+    margin-right: 20px;
+} 
+
